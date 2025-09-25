@@ -1,6 +1,6 @@
 //
 //  main.c
-//  04 실습5
+//  04 실습6
 //
 //  Created by 이예림 on 9/25/25.
 //
@@ -8,21 +8,18 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    unsigned int x;
-    int b;
+    int second;
+    int minute;
+    int time;
     
-    printf("input a number : ");
-    scanf("%ui", &x);
+    printf("input the second : ");
+    scanf("%i", &second);
     
-    for(b=0; x!=0; x>>=1)
-    {
-        if(x&1)//x와 숫자1이 bit연산을 함, x의 2진수 끝자리가 1이다.
-        {
-            b++;
-        }
-    }
+    time = second / 3600;
+    minute = (second % 3600)/60;
     
-    printf("The result is : %i\n", b);
+    
+    printf("The time for %i second is %i : %i : %i \n", second,time, minute, (second%3600)%60);
         
     return 0;
 }
