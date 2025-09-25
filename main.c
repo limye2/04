@@ -1,6 +1,6 @@
 //
 //  main.c
-//  04 실습1
+//  04 실습2
 //
 //  Created by 이예림 on 9/25/25.
 //
@@ -8,18 +8,17 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int x,y,z,m;
-    int a,b,c;
-    x=2;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
     
-    y = (a*x*x) + (b*x) + c;
-    m = (x+y+z)/3;
+    int a, b;
     
-    printf("y=%d, m=%d", y, m);
+    printf("input two integers : ");
+    scanf("%i %i", &a, &b);
+    
+    printf("+ result is %i\n", a + b);
+    printf("- result is %i\n", a - b);
+    printf("* result is %i\n", a * b);
+    printf("/ result is %i\n", a / b);
+    printf("%% result is %i\n", a % b);
     
     return 0;
 }
