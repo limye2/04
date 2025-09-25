@@ -9,16 +9,12 @@
 
 int main(int argc, const char * argv[]) {
     
-    int a, b;
+    int x;
     
-    printf("input two integers : ");
-    scanf("%i %i", &a, &b);
+    printf("input the second : ");
+    scanf("%i", &x);
     
-    printf("+ result is %i\n", a + b);
-    printf("- result is %i\n", a - b);
-    printf("* result is %i\n", a * b);
-    printf("/ result is %i\n", a / b);
-    printf("%% result is %i\n", a % b);
-    
+    printf("the time is %i : %i\n", x/60, x%60);
+        
     return 0;
 }
